@@ -45,6 +45,10 @@ class ItemsProcFunc
     {
         $boardId = $config['row']['settings.boardId'];
 
+        if (!$boardId) {
+            return;
+        }
+
         # On change returns a string otherwise an array is returned. Don't know why.
         if (is_array($boardId)) {
             $boardId = $boardId[0];
