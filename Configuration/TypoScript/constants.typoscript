@@ -7,4 +7,9 @@ plugin.tx_trellointegration {
     # cat=plugin.tx_trellointegration/file; type=string; label=Path to template layouts
     layoutRootPath = EXT:trello_integration/Resources/Private/Layouts/
   }
+
+  settings {
+    # cat=plugin.tx_trellointegration/settings; type=int+; label=LLL:EXT:trello_integration/Resources/Private/Language/locallang.xlf:config.expire_cache
+    expireCache =
+  }
 }

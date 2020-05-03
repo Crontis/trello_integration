@@ -15,4 +15,8 @@ plugin.tx_trellointegration {
       1 = {$plugin.tx_trellointegration.view.layoutRootPath}
     }
   }
+
+  settings {
+    expireCache = {$plugin.tx_trellointegration.settings.expireCache}
+  }
 }

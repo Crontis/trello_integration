@@ -9,6 +9,9 @@
 			<trans-unit id="config.api_token" xml:space="preserve">
 				<source>Trello API Token</source>
 			</trans-unit>
+			<trans-unit id="config.expire_cache" xml:space="preserve">
+				<source>Expire cache after given seconds</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
