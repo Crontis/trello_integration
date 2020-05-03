@@ -33,14 +33,14 @@
 								<type>select</type>
 								<itemsProcFunc>Crontis\TrelloIntegration\Backend\ItemsProcFunc->getLists</itemsProcFunc>
 								<renderType>selectSingle</renderType>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.select</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+								</items>
 							</config>
 							<displayCond>FIELD:settings.boardId:REQ:true</displayCond>
-							<items>
-								<numIndex index="0">
-									<numIndex index="0">LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.select</numIndex>
-									<numIndex index="1"></numIndex>
-								</numIndex>
-							</items>
 						</TCEforms>
 					</settings.listId>
 				</el>
