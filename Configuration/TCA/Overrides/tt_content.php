@@ -18,3 +18,6 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['trellointegr
     'trellointegration_showcardsonlist',
     'FILE:EXT:trello_integration/Configuration/FlexForms/ShowCardsOnList.xml'
 );
+
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['trellointegration_showcardsonlist']
+    = 'recursive,pages';
