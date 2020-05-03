@@ -2,17 +2,17 @@
 declare(strict_types=1);
 namespace Crontis\TrelloIntegration\Backend;
 
-use TrelloPhp\Client;
-use TrelloPhp\Requests\Boards\GetListsOnABoard;
-use TrelloPhp\Requests\Members\GetMemberBoardsRequest;
-use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-
 /**
  * This file is part of the "trello_integration" Extension for TYPO3 CMS.
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  */
+
+use TrelloPhp\Client;
+use TrelloPhp\Requests\Boards\GetListsOnABoard;
+use TrelloPhp\Requests\Members\GetMemberBoardsRequest;
+use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class ItemsProcFunc
 {

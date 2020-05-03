@@ -13,7 +13,6 @@ use TrelloPhp\Requests\Lists\GetCardsInAList;
 use TYPO3\CMS\Core\Cache\Frontend\FrontendInterface;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 Class TrelloController extends ActionController
 {
