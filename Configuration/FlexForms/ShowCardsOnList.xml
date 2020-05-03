@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.show_cards_on_list.title</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.boardId>
+						<TCEforms>
+							<label>LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.select_board</label>
+							<config>
+								<type>select</type>
+								<itemsProcFunc>Crontis\TrelloIntegration\Backend\ItemsProcFunc->getBoards</itemsProcFunc>
+								<renderType>selectSingle</renderType>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.select</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+								</items>
+							</config>
+							<onChange>reload</onChange>
+						</TCEforms>
+					</settings.boardId>
+
+					<settings.listId>
+						<TCEforms>
+							<label>LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.select_list</label>
+							<config>
+								<type>select</type>
+								<itemsProcFunc>Crontis\TrelloIntegration\Backend\ItemsProcFunc->getLists</itemsProcFunc>
+								<renderType>selectSingle</renderType>
+							</config>
+							<displayCond>FIELD:settings.boardId:REQ:true</displayCond>
+							<items>
+								<numIndex index="0">
+									<numIndex index="0">LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.select</numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+							</items>
+						</TCEforms>
+					</settings.listId>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

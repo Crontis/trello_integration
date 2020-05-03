@@ -1,0 +1,10 @@
+plugin.tx_trellointegration {
+  view {
+    # cat=plugin.tx_trellointegration/file; type=string; label=Path to template root
+    templateRootPath  = EXT:trello_integration/Resources/Private/Templates/
+    # cat=plugin.tx_trellointegration/file; type=string; label=Path to template partials
+    partialRootPath = EXT:trello_integration/Resources/Private/Partials/
+    # cat=plugin.tx_trellointegration/file; type=string; label=Path to template layouts
+    layoutRootPath = EXT:trello_integration/Resources/Private/Layouts/
+  }
+}

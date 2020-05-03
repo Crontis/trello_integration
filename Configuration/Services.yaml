@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Crontis\TrelloIntegration\:
+    resource: '../Classes/*'
+
+  cache.trellointegration_apicache:
+    class: TYPO3\CMS\Core\Cache\Frontend\FrontendInterface
+    factory: ['@TYPO3\CMS\Core\Cache\CacheManager', 'getCache']
+    arguments: ['trellointegration_apicache']
+
+  Crontis\TrelloIntegration\Controller\TrelloController:
+    arguments:
+      $cache: '@cache.trellointegration_apicache'

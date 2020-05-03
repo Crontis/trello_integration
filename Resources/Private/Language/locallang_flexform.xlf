@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" product-name="trello_integrations">
+		<header/>
+		<body>
+			<trans-unit id="settings.show_cards_on_list.title" xml:space="preserve">
+				<source>Show cards on List</source>
+			</trans-unit>
+			<trans-unit id="settings.select" xml:space="preserve">
+				<source>--- Select ---</source>
+			</trans-unit>
+			<trans-unit id="settings.select_board" xml:space="preserve">
+				<source>Select Board</source>
+			</trans-unit>
+			<trans-unit id="settings.select_list" xml:space="preserve">
+				<source>Select List</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

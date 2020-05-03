@@ -1,0 +1,18 @@
+plugin.tx_trellointegration {
+  view {
+    templateRootPaths {
+      0 = EXT:trello_integration//Resources/Private/Templates/
+      1 = {$plugin.tx_trellointegration.view.templateRootPath}
+    }
+
+    partialRootPaths {
+      0 = EXT:trello_integration/Resources/Private/Partials/
+      1 = {$plugin.tx_trellointegration.view.partialRootPath}
+    }
+
+    layoutRootPaths {
+      0 = EXT:trello_integration/Resources/Private/Layouts/
+      1 = {$plugin.tx_trellointegration.view.layoutRootPath}
+    }
+  }
+}

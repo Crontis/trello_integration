@@ -1,0 +1,4 @@
+# cat=plugin.tx_trellointegration/settings; type=string; label=LLL:EXT:trello_integration/Resources/Private/Language/locallang.xlf:config.api_key
+apiKey =
+# cat=plugin.tx_trellointegration/settings; type=string; label=LLL:EXT:trello_integration/Resources/Private/Language/locallang.xlf:config.api_token
+apiToken =
