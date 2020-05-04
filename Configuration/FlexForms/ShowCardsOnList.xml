@@ -13,12 +13,13 @@
 							<label>LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.select_board</label>
 							<config>
 								<type>select</type>
+								<default>0</default>
 								<itemsProcFunc>Crontis\TrelloIntegration\Backend\ItemsProcFunc->getBoards</itemsProcFunc>
 								<renderType>selectSingle</renderType>
 								<items>
 									<numIndex index="0">
 										<numIndex index="0">LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.select</numIndex>
-										<numIndex index="1"></numIndex>
+										<numIndex index="1">0</numIndex>
 									</numIndex>
 								</items>
 							</config>
@@ -29,18 +30,19 @@
 					<settings.listId>
 						<TCEforms>
 							<label>LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.select_list</label>
+							<displayCond>FIELD:settings.boardId:REQ:true</displayCond>
 							<config>
 								<type>select</type>
 								<itemsProcFunc>Crontis\TrelloIntegration\Backend\ItemsProcFunc->getLists</itemsProcFunc>
+								<default>0</default>
 								<renderType>selectSingle</renderType>
 								<items>
 									<numIndex index="0">
 										<numIndex index="0">LLL:EXT:trello_integration/Resources/Private/Language/locallang_flexform.xlf:settings.select</numIndex>
-										<numIndex index="1"></numIndex>
+										<numIndex index="1">0</numIndex>
 									</numIndex>
 								</items>
 							</config>
-							<displayCond>FIELD:settings.boardId:REQ:true</displayCond>
 						</TCEforms>
 					</settings.listId>
 				</el>

@@ -45,13 +45,13 @@ class ItemsProcFunc
     {
         $boardId = $config['row']['settings.boardId'];
 
-        if (!$boardId) {
-            return;
-        }
-
-        # On change returns a string otherwise an array is returned. Don't know why.
+        # On Plugin creation on change will return a string instead of an array. Don't know why.
         if (is_array($boardId)) {
             $boardId = $boardId[0];
+        }
+
+        if (!$boardId) {
+            return;
         }
 
         $lists = $this->client->send(new GetListsOnABoard($boardId));
