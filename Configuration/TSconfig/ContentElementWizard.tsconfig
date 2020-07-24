@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+  elements {
+    trellointegration_showcardsonlist {
+      iconIdentifier = ext-trellointegration-icon
+      title = LLL:EXT:trello_integration/Resources/Private/Language/locallang_be.xlf:plugin.trellointegration_showcardsonlist.title
+      description = LLL:EXT:trello_integration/Resources/Private/Language/locallang_be.xlf:plugin.trellointegration_showcardsonlist.description
+      tt_content_defValues {
+        CType = list
+        list_type = trellointegration_showcardsonlist
+      }
+    }
+  }
+}

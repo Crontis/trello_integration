@@ -1,12 +1,14 @@
 <?php
-declare(strict_types=1);
-namespace Crontis\TrelloIntegration\Backend;
 
-/**
- * This file is part of the "trello_integration" Extension for TYPO3 CMS.
+declare(strict_types=1);
+
+/*
+ * This file is part of the package crontis/trello_integration.
  * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
+ * LICENSE file that was distributed with this source code.
  */
+
+namespace Crontis\TrelloIntegration\Backend;
 
 use TrelloPhp\Client;
 use TrelloPhp\Requests\Boards\GetListsOnABoard;
@@ -45,7 +47,7 @@ class ItemsProcFunc
     {
         $boardId = $config['row']['settings.boardId'];
 
-        # On Plugin creation on change will return a string instead of an array. Don't know why.
+        // On Plugin creation on change will return a string instead of an array. Don't know why.
         if (is_array($boardId)) {
             $boardId = $boardId[0];
         }

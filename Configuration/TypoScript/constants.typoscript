@@ -9,7 +9,7 @@ plugin.tx_trellointegration {
   }
 
   settings {
-    # cat=plugin.tx_trellointegration/settings; type=int+; label=LLL:EXT:trello_integration/Resources/Private/Language/locallang.xlf:config.expire_cache
+    # cat=plugin.tx_trellointegration/settings; type=int+; label=LLL:EXT:trello_integration/Resources/Private/Language/locallang_be.xlf:settings.expire_cache
     expireCache =
   }
 }

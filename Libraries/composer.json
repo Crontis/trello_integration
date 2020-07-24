@@ -1,0 +1,15 @@
+{
+	"name": "crontis/trello-integration-dependencies",
+	"description": "Dependencies of trello integration extension",
+	"type": "library",
+	"require": {
+		"crontis/trello-php": "dev-master"
+	},
+	"authors": [
+		{
+			"name": "Markus Kugler (Crontis)",
+			"email": "dev@crontis.net",
+			"homepage": "https://crontis.net"
+		}
+	]
+}

@@ -18,3 +18,13 @@ defined('TYPO3_MODE') || die();
 if (!is_array($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['trellointegration_apicache'])) {
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['trellointegration_apicache'] = [];
 }
+
+$iconRegistry->registerIcon(
+    'ext-trellointegration-icon',
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => 'EXT:trello_integration/Resources/Public/Icons/Extension.svg']
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:trello_integration/Configuration/TSconfig/ContentElementWizard.tsconfig">'
+);

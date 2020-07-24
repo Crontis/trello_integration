@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" product-name="trello_integrations">
+		<header/>
+		<body>
+			<trans-unit id="config.api_key" xml:space="preserve">
+				<source>Trello API Key</source>
+			</trans-unit>
+			<trans-unit id="config.api_token" xml:space="preserve">
+				<source>Trello API Token</source>
+			</trans-unit>
+
+			<trans-unit id="settings.expire_cache" xml:space="preserve">
+				<source>Expire cache after given seconds</source>
+			</trans-unit>
+
+			<trans-unit id="plugin.trellointegration_showcardsonlist.title" xml:space="preserve">
+				<source>Trello - Show Cards on List</source>
+			</trans-unit>
+			<trans-unit id="plugin.trellointegration_showcardsonlist.description" xml:space="preserve">
+				<source>Show cards of selected list</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

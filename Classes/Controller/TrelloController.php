@@ -1,12 +1,14 @@
 <?php
-declare(strict_types=1);
-namespace Crontis\TrelloIntegration\Controller;
 
-/**
- * This file is part of the "trello_integration" Extension for TYPO3 CMS.
+declare(strict_types=1);
+
+/*
+ * This file is part of the package crontis/trello_integration.
  * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
+ * LICENSE file that was distributed with this source code.
  */
+
+namespace Crontis\TrelloIntegration\Controller;
 
 use TrelloPhp\Client;
 use TrelloPhp\Requests\Lists\GetCardsInAList;
@@ -14,17 +16,12 @@ use TYPO3\CMS\Core\Cache\Frontend\FrontendInterface;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
-Class TrelloController extends ActionController
+class TrelloController extends ActionController
 {
     /**
      * @var FrontendInterface
      */
     private $cache;
-
-    /**
-     * @var ExtensionConfiguration
-     */
-    private $extensionConfiguration;
 
     /**
      * @var Client
@@ -34,7 +31,6 @@ Class TrelloController extends ActionController
     public function __construct(FrontendInterface $cache, ExtensionConfiguration $extensionConfiguration)
     {
         $this->cache = $cache;
-        $this->extensionConfiguration = $extensionConfiguration;
         $this->client = new Client(
             $extensionConfiguration->get('trello_integration', 'apiKey'),
             $extensionConfiguration->get('trello_integration', 'apiToken')
@@ -47,7 +43,7 @@ Class TrelloController extends ActionController
 
         if (!($cards = $this->cache->get('list-' . $listId))) {
             $cards = $this->client->send(new GetCardsInAList($listId));
-            $this->cache->set('list-' . $listId , $cards, [], $this->settings['expireCache'] ?: 900);
+            $this->cache->set('list-' . $listId, $cards, [], $this->settings['expireCache'] ?: 900);
         }
 
         $this->view->assign('cards', $cards);
