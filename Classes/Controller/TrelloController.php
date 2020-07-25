@@ -43,7 +43,7 @@ class TrelloController extends ActionController
 
         if (!($cards = $this->cache->get('list-' . $listId))) {
             $cards = $this->client->send(new GetCardsInAList($listId));
-            $this->cache->set('list-' . $listId, $cards, [], $this->settings['expireCache'] ?: 900);
+            $this->cache->set('list-' . $listId, $cards, [], (int)$this->settings['expireCache'] ?: 900);
         }
 
         $this->view->assign('cards', $cards);
