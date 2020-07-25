@@ -2,7 +2,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Trello Integration',
     'description' => 'Trello integration for TYPO3',
-    'category' => 'templates',
+    'category' => 'plugin',
     'author' => 'Crontis (Markus Kugler)',
     'author_email' => 'dev@crontis.net',
     'state' => 'stable',
