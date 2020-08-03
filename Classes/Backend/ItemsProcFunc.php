@@ -33,7 +33,7 @@ class ItemsProcFunc
         );
     }
 
-    public function getBoards(array &$config)
+    public function getBoards(array &$config): void
     {
         $boards = $this->client->send(new GetMemberBoardsRequest());
         foreach ($boards as $board) {
@@ -43,7 +43,7 @@ class ItemsProcFunc
         }
     }
 
-    public function getLists(array &$config)
+    public function getLists(array &$config): void
     {
         $boardId = $config['row']['settings.boardId'];
 
