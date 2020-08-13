@@ -14,7 +14,10 @@ use TrelloPhp\Client;
 use TrelloPhp\Requests\Lists\GetCardsInAList;
 use TYPO3\CMS\Core\Cache\Frontend\FrontendInterface;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+
+@include 'phar://' . ExtensionManagementUtility::extPath('trello_integration') . 'Libraries/trello-php.phar/vendor/autoload.php';
 
 class TrelloController extends ActionController
 {

@@ -14,7 +14,10 @@ use TrelloPhp\Client;
 use TrelloPhp\Requests\Boards\GetListsOnABoard;
 use TrelloPhp\Requests\Members\GetMemberBoardsRequest;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+
+@include 'phar://' . ExtensionManagementUtility::extPath('trello_integration') . 'Libraries/trello-php.phar/vendor/autoload.php';
 
 class ItemsProcFunc
 {
