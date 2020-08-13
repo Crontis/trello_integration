@@ -10,6 +10,10 @@ This can be done visiting https://trello.com/app-key
 
 After retrieving your key and token you can set them globally by using the Extension Configuration.
 
+## Examples
+Display a list of upcoming posts on your blog!
+![Show card of a list example](Documentation/Usage.png)
+
 ## Features
 
 ### Display a list
